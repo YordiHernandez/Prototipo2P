@@ -1,0 +1,131 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Controlador;
+
+namespace Vista
+{
+    public partial class productos : Form
+    {
+
+        controlador cn = new controlador();
+        string table = "tbl_productos";
+        public void llenar()
+        {
+            DataTable dt = cn.llenarTbl(table);
+            Dt1.DataSource = dt;
+        }
+
+        public void limpiar()
+        {
+            TxtCodigo.Text = "";
+            TxtEstado.Text = "";
+            TxtExis.Text = "";
+            TxtLinea.Text = "";
+            TxtMarca.Text = "";
+            TxtME.Text = "";
+            TxtNombre.Text = "";
+        }
+
+        public void checkbox()
+        {
+            if (checkBox1.Checked)
+            {
+                TxtEstado.Text = "1";
+            }
+
+            if (checkBox2.Checked)
+            {
+                TxtEstado.Text = "0";
+            }
+        }
+
+
+        public productos()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            checkbox();
+            if (TxtCodigo.Text=="" || TxtEstado.Text == "" || TxtNombre.Text == "" || TxtExis.Text == "" || TxtLinea.Text == "" || TxtMarca.Text == "")
+            {
+                MessageBox.Show("COMPLETAR INFORMACION");
+            }
+            else
+            {
+
+                TextBox[] textbox = { TxtCodigo, TxtEstado, TxtNombre, TxtExis, TxtLinea, TxtMarca};
+                cn.ingresar(textbox, table);
+                string message = "Registro Guardado";
+                limpiar();
+                llenar();
+                MessageBox.Show(message);
+            }
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+            checkbox();
+            if (TxtCodigo.Text == "" || TxtEstado.Text == "" || TxtNombre.Text == "" || TxtExis.Text == "" || TxtLinea.Text == "" || TxtMarca.Text == "")
+            {
+                MessageBox.Show("COMPLETAR INFORMACION");
+
+            }
+            else
+            {
+
+                checkbox();
+                TextBox[] textbox = { TxtCodigo, TxtEstado, TxtNombre };
+                int valor1 = int.Parse(TxtME.Text);
+                string campo = "pk_codigo_producto = ";
+                cn.actualizar(textbox, table, campo, valor1);
+                MessageBox.Show("Dato modificado");
+                limpiar();
+                llenar();
+
+            }
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            string message = "Deseas Eliminar el Registro?";
+            string title = "Eliminar Registro";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result = MessageBox.Show(message, title, buttons);
+            if (result == DialogResult.Yes)
+            {
+                int campo = int.Parse(TxtME.Text);
+                string condicion = "pk_codigo_producto = ";
+                cn.eliminar(table, condicion, campo);
+                limpiar();
+                llenar();
+                MessageBox.Show("Registro Eliminado");
+
+            }
+            else
+            {
+                limpiar();
+                llenar();
+
+            }
+        }
+
+        private void BtnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+
+        private void productos_Load(object sender, EventArgs e)
+        {
+            llenar();
+        }
+    }
+}
