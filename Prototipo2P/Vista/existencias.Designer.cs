@@ -1,0 +1,244 @@
+﻿
+namespace Vista
+{
+    partial class existencias
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TxtExis = new System.Windows.Forms.TextBox();
+            this.TxtProd = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtBodega = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TxtME = new System.Windows.Forms.TextBox();
+            this.BtnLimpiar = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
+            this.BtnGuardar = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Dt1 = new System.Windows.Forms.DataGridView();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Dt1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Poor Richard", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(344, 12);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(130, 22);
+            this.label7.TabIndex = 37;
+            this.label7.Text = "EXISTENCIAS";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.TxtExis);
+            this.groupBox2.Controls.Add(this.TxtProd);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.TxtBodega);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(12, 86);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(263, 162);
+            this.groupBox2.TabIndex = 36;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ingreso Datos";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // TxtExis
+            // 
+            this.TxtExis.Location = new System.Drawing.Point(98, 120);
+            this.TxtExis.Name = "TxtExis";
+            this.TxtExis.Size = new System.Drawing.Size(154, 20);
+            this.TxtExis.TabIndex = 12;
+            // 
+            // TxtProd
+            // 
+            this.TxtProd.Location = new System.Drawing.Point(98, 82);
+            this.TxtProd.Name = "TxtProd";
+            this.TxtProd.Size = new System.Drawing.Size(154, 20);
+            this.TxtProd.TabIndex = 11;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 120);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Existencia";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(86, 13);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "Codigo Producto";
+            // 
+            // TxtBodega
+            // 
+            this.TxtBodega.Location = new System.Drawing.Point(98, 41);
+            this.TxtBodega.Name = "TxtBodega";
+            this.TxtBodega.Size = new System.Drawing.Size(154, 20);
+            this.TxtBodega.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Codigo bodega";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.TxtME);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(235, 68);
+            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Modificar, Eliminar";
+            // 
+            // TxtME
+            // 
+            this.TxtME.Location = new System.Drawing.Point(6, 30);
+            this.TxtME.Name = "TxtME";
+            this.TxtME.Size = new System.Drawing.Size(211, 20);
+            this.TxtME.TabIndex = 0;
+            // 
+            // BtnLimpiar
+            // 
+            this.BtnLimpiar.Location = new System.Drawing.Point(358, 231);
+            this.BtnLimpiar.Name = "BtnLimpiar";
+            this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
+            this.BtnLimpiar.TabIndex = 34;
+            this.BtnLimpiar.Text = "Limpiar";
+            this.BtnLimpiar.UseVisualStyleBackColor = true;
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.Location = new System.Drawing.Point(358, 187);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.BtnEliminar.TabIndex = 33;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = true;
+            // 
+            // BtnModificar
+            // 
+            this.BtnModificar.Location = new System.Drawing.Point(358, 134);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(75, 23);
+            this.BtnModificar.TabIndex = 32;
+            this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.UseVisualStyleBackColor = true;
+            // 
+            // BtnGuardar
+            // 
+            this.BtnGuardar.Location = new System.Drawing.Point(358, 86);
+            this.BtnGuardar.Name = "BtnGuardar";
+            this.BtnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.BtnGuardar.TabIndex = 31;
+            this.BtnGuardar.Text = "Guardar";
+            this.BtnGuardar.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.Dt1);
+            this.groupBox3.Location = new System.Drawing.Point(12, 274);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(446, 218);
+            this.groupBox3.TabIndex = 38;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Consulta datos";
+            // 
+            // Dt1
+            // 
+            this.Dt1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dt1.Location = new System.Drawing.Point(6, 19);
+            this.Dt1.Name = "Dt1";
+            this.Dt1.Size = new System.Drawing.Size(434, 193);
+            this.Dt1.TabIndex = 0;
+            // 
+            // existencias
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(476, 501);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.BtnLimpiar);
+            this.Controls.Add(this.BtnEliminar);
+            this.Controls.Add(this.BtnModificar);
+            this.Controls.Add(this.BtnGuardar);
+            this.Name = "existencias";
+            this.Text = "existencias";
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Dt1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox TxtExis;
+        private System.Windows.Forms.TextBox TxtProd;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox TxtBodega;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox TxtME;
+        private System.Windows.Forms.Button BtnLimpiar;
+        private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Button BtnGuardar;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView Dt1;
+    }
+}
